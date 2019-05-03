@@ -90,6 +90,7 @@ func (b preferencePaneBuilder) Build() error {
 		// This disables xcodebuild from attempting to codesign.
 		// We do that in its own build step.
 		"CODE_SIGN_IDENTITY=",
+    "CODE_SIGNING_ALLOWED=NO",
 		"CODE_SIGNING_REQUIRED=NO")
 	if err != nil {
 		return err
